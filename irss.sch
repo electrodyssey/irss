@@ -1,0 +1,369 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:btt-mcu
+LIBS:stm32
+LIBS:btt-iface
+LIBS:ESD_Protection
+LIBS:ft232rl
+LIBS:LM4140ACM-2.0
+LIBS:irss-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "MCU"
+Date "2018-09-30"
+Rev "001"
+Comp "(c) elecrodyssey / LGPL"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +12V #PWR5
+U 1 1 5CAAD487
+P 3150 725
+F 0 "#PWR5" H 3150 575 50  0001 C CNN
+F 1 "+12V" H 3150 865 50  0000 C CNN
+F 2 "" H 3150 725 50  0001 C CNN
+F 3 "" H 3150 725 50  0001 C CNN
+	1    3150 725 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR9
+U 1 1 5CAAD85E
+P 4325 1575
+F 0 "#PWR9" H 4325 1425 50  0001 C CNN
+F 1 "+5V" H 4325 1715 50  0000 C CNN
+F 2 "" H 4325 1575 50  0001 C CNN
+F 3 "" H 4325 1575 50  0001 C CNN
+	1    4325 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L AZ1117-3.3 U1
+U 1 1 5CAAEBF5
+P 1125 1250
+F 0 "U1" H 975 1375 50  0000 C CNN
+F 1 "AZ1117-3.3" H 1125 1375 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2" H 1125 1500 50  0001 C CIN
+F 3 "" H 1125 1250 50  0001 C CNN
+	1    1125 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 5CAAEE75
+P 4325 2500
+F 0 "#PWR10" H 4325 2250 50  0001 C CNN
+F 1 "GND" H 4325 2350 50  0000 C CNN
+F 2 "" H 4325 2500 50  0001 C CNN
+F 3 "" H 4325 2500 50  0001 C CNN
+	1    4325 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5CAAF865
+P 4075 2125
+F 0 "C3" H 4100 2225 50  0000 L CNN
+F 1 "0.1" H 4100 2025 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4113 1975 50  0001 C CNN
+F 3 "" H 4075 2125 50  0001 C CNN
+	1    4075 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C4
+U 1 1 5CAB0F8A
+P 4325 2125
+F 0 "C4" H 4350 2225 50  0000 L CNN
+F 1 "49" H 4350 2025 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31_Hand" H 4363 1975 50  0001 C CNN
+F 3 "" H 4325 2125 50  0001 C CNN
+	1    4325 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 5CAB1F55
+P 750 1000
+F 0 "#PWR1" H 750 850 50  0001 C CNN
+F 1 "+5V" H 750 1140 50  0000 C CNN
+F 2 "" H 750 1000 50  0001 C CNN
+F 3 "" H 750 1000 50  0001 C CNN
+	1    750  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5CAB23B8
+P 1125 1700
+F 0 "#PWR2" H 1125 1450 50  0001 C CNN
+F 1 "GND" H 1125 1550 50  0000 C CNN
+F 2 "" H 1125 1700 50  0001 C CNN
+F 3 "" H 1125 1700 50  0001 C CNN
+	1    1125 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 5CAB2D26
+P 1525 1650
+F 0 "C1" H 1535 1720 50  0000 L CNN
+F 1 "10uF" H 1535 1570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1525 1650 50  0001 C CNN
+F 3 "" H 1525 1650 50  0001 C CNN
+	1    1525 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5CAB2D2C
+P 1775 1650
+F 0 "C2" H 1785 1720 50  0000 L CNN
+F 1 "0.1" H 1785 1570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1775 1650 50  0001 C CNN
+F 3 "" H 1775 1650 50  0001 C CNN
+	1    1775 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5CAB2D32
+P 1525 1900
+F 0 "#PWR3" H 1525 1650 50  0001 C CNN
+F 1 "GND" H 1525 1750 50  0000 C CNN
+F 2 "" H 1525 1900 50  0001 C CNN
+F 3 "" H 1525 1900 50  0001 C CNN
+	1    1525 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR4
+U 1 1 5CAB31CD
+P 1850 1025
+F 0 "#PWR4" H 1850 875 50  0001 C CNN
+F 1 "+3V3" H 1850 1165 50  0000 C CNN
+F 2 "" H 1850 1025 50  0001 C CNN
+F 3 "" H 1850 1025 50  0001 C CNN
+	1    1850 1025
+	1    0    0    -1  
+$EndComp
+Text Notes 975  2325 0    60   ~ 0
+power
+Wire Wire Line
+	3150 725  3150 1075
+Wire Wire Line
+	4325 1575 4325 1975
+Wire Wire Line
+	4325 2275 4325 2500
+Wire Wire Line
+	4075 1975 4075 1875
+Wire Wire Line
+	4075 1875 4325 1875
+Connection ~ 4325 1875
+Wire Wire Line
+	4075 2275 4075 2325
+Wire Wire Line
+	4075 2325 4325 2325
+Connection ~ 4325 2325
+Wire Wire Line
+	750  1000 750  1250
+Wire Wire Line
+	750  1250 825  1250
+Wire Wire Line
+	1125 1550 1125 1700
+Wire Wire Line
+	1525 1250 1525 1550
+Wire Wire Line
+	1775 1550 1775 1425
+Wire Wire Line
+	1525 1750 1525 1900
+Wire Wire Line
+	1525 1850 1775 1850
+Wire Wire Line
+	1775 1850 1775 1750
+Connection ~ 1525 1850
+Wire Wire Line
+	1775 1425 1525 1425
+Connection ~ 1525 1425
+Wire Wire Line
+	1850 1250 1425 1250
+Connection ~ 1525 1250
+Wire Notes Line
+	625  525  625  3075
+Wire Notes Line
+	625  525  4925 525 
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 5CB20966
+P 3500 750
+F 0 "#FLG1" H 3500 825 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 900 50  0000 C CNN
+F 2 "" H 3500 750 50  0001 C CNN
+F 3 "" H 3500 750 50  0001 C CNN
+	1    3500 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 750  3500 825 
+Wire Wire Line
+	3500 825  3150 825 
+Connection ~ 3150 825 
+$Sheet
+S 1650 3475 1650 3675
+U 5CB16B33
+F0 "MCU" 60
+F1 "mcu.sch" 60
+F2 "I2C_SDA" B R 3300 4275 60 
+F3 "I2C_SCL" O R 3300 4550 60 
+F4 "I2C_CS0" O R 3300 4850 60 
+F5 "I2C_CS1" O R 3300 5175 60 
+$EndSheet
+$Sheet
+S 4300 3475 1275 3650
+U 5CAF858F
+F0 "SENSORS" 60
+F1 "sensors.sch" 60
+F2 "I2C_SCL" I L 4300 4550 60 
+F3 "I2C_SDA" I L 4300 4275 60 
+F4 "I2C_CS1" I L 4300 5175 60 
+F5 "I2C_CS0" I L 4300 4850 60 
+$EndSheet
+$Comp
+L Conn_01x02 J_DC12V1
+U 1 1 5CB39932
+P 4225 975
+F 0 "J_DC12V1" H 4225 1075 50  0000 C CNN
+F 1 "Conn_01x02" H 4225 775 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Altech_AK300-2_P5.00mm" H 4225 975 50  0001 C CNN
+F 3 "" H 4225 975 50  0001 C CNN
+	1    4225 975 
+	1    0    0    -1  
+$EndComp
+$Comp
+L AZ1117-5.0 U2
+U 1 1 5CB399A8
+P 3625 1675
+F 0 "U2" H 3475 1800 50  0000 C CNN
+F 1 "AZ1117-5.0" H 3625 1800 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2" H 3625 1925 50  0001 C CIN
+F 3 "" H 3625 1675 50  0001 C CNN
+	1    3625 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 5CB39C02
+P 3800 800
+F 0 "#PWR8" H 3800 550 50  0001 C CNN
+F 1 "GND" H 3800 650 50  0000 C CNN
+F 2 "" H 3800 800 50  0001 C CNN
+F 3 "" H 3800 800 50  0001 C CNN
+	1    3800 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 800  3800 650 
+Wire Wire Line
+	3800 650  3950 650 
+Wire Wire Line
+	3950 650  3950 975 
+Wire Wire Line
+	3950 975  4025 975 
+$Comp
+L +12V #PWR6
+U 1 1 5CB3A219
+P 3200 1500
+F 0 "#PWR6" H 3200 1350 50  0001 C CNN
+F 1 "+12V" H 3200 1640 50  0000 C CNN
+F 2 "" H 3200 1500 50  0001 C CNN
+F 3 "" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1500 3200 1675
+Wire Wire Line
+	3200 1675 3325 1675
+Wire Wire Line
+	3925 1675 4325 1675
+Connection ~ 4325 1675
+$Comp
+L GND #PWR7
+U 1 1 5CB3A948
+P 3625 2050
+F 0 "#PWR7" H 3625 1800 50  0001 C CNN
+F 1 "GND" H 3625 1900 50  0000 C CNN
+F 2 "" H 3625 2050 50  0001 C CNN
+F 3 "" H 3625 2050 50  0001 C CNN
+	1    3625 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 1975 3625 2050
+Wire Notes Line
+	4925 525  4925 3075
+Wire Notes Line
+	4925 3075 625  3075
+$Comp
+L D D1
+U 1 1 5CB3B32E
+P 3575 1075
+F 0 "D1" H 3575 1175 50  0000 C CNN
+F 1 "DFLS1100-7" H 3575 975 50  0000 C CNN
+F 2 "Diodes_SMD:D_PowerDI-123" H 3575 1075 50  0001 C CNN
+F 3 "" H 3575 1075 50  0001 C CNN
+	1    3575 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 1075 4025 1075
+Wire Wire Line
+	3150 1075 3425 1075
+Wire Wire Line
+	1850 1025 1850 1250
+Wire Wire Line
+	3300 4275 4300 4275
+Wire Wire Line
+	4300 4550 3300 4550
+Wire Wire Line
+	3300 4850 4300 4850
+Wire Wire Line
+	4300 5175 3300 5175
+$EndSCHEMATC

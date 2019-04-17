@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM4140ACM-2.0
+D 2.0V LDO Volt. Reference,LM4140ACM-2.0
+K
+F http://www.ti.com/lit/ds/symlink/lm4140.pdf
+$ENDCMP
+#
+#End Doc Library
